@@ -1,0 +1,7 @@
+import libc
+
+fn main() {
+    for int i = 0; i < 100000000; i+=1 {
+        var r = libc.sqrt(4)
+    }
+}

@@ -1,0 +1,27 @@
+import time  
+import co  
+  
+var count = 0  
+  
+fn sum_co() {  
+    count += 1  
+    co.sleep(10000) 
+}  
+  
+fn main() {  
+    var start = time.now().ms_timestamp()  
+    for int i = 0; i < 1000000; i+=1 {  
+        go sum_co()  
+    }  
+  
+    println(time.now().ms_timestamp() - start)  // create time
+    
+    int prev_count = 0  
+    for prev_count != count {  
+        println(time.now().ms_timestamp() - start, count)  
+        prev_count = count  
+        co.sleep(10)  
+    }  
+    println(time.now().ms_timestamp() - 10 - start) // calc time
+    co.sleep(3000) // ms
+} 

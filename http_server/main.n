@@ -1,0 +1,11 @@
+import http
+ 
+fn main() {
+    var app = http.server()
+  
+    app.get('/', fn(http.request_t req, ptr<http.response_t> res):void! {  
+        res.send('hello world')  
+    })  
+  
+    app.listen(8888)  
+}
