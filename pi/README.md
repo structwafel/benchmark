@@ -1,4 +1,12 @@
-## nature
+## Macmini m4 virtual machine
+
+CPU cores: 10
+
+Memory: 7.80745 GB
+
+Linux ubuntu 6.17.8-orbstack-00308-g8f9c941121b1 #1 SMP PREEMPT Thu Nov 20 09:34:02 UTC 2025 aarch64 aarch64 aarch64 GNU/Linux
+
+## nature v0.7.1
 
 ```
 hyperfine ./pi_n
@@ -8,7 +16,7 @@ Benchmark 1: ./pi_n
 
 ```
 
-## golang
+## go1.25.5
 
 ```
 hyperfine ./pi_go
@@ -19,7 +27,7 @@ Benchmark 1: ./pi_go
 ```
 
 
-## rust
+## rust 1.92.0
 
 ```
 hyperfine ./pi_rs
@@ -28,7 +36,7 @@ Benchmark 1: ./pi_rs
   Range (min … max):   544.0 ms … 565.9 ms    10 runs
 ```
 
-## node.js
+## node.js v25.2.0
 
 ```
 hyperfine "node main.js"

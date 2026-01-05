@@ -1,5 +1,13 @@
 
-## nature
+## Macmini m4 virtual machine
+
+CPU cores: 10
+
+Memory: 7.80745 GB
+
+Linux ubuntu 6.17.8-orbstack-00308-g8f9c941121b1 #1 SMP PREEMPT Thu Nov 20 09:34:02 UTC 2025 aarch64 aarch64 aarch64 GNU/Linux
+
+## nature v0.7.1
 
 ```
 hyperfine ./fib_nature 
@@ -8,7 +16,7 @@ Benchmark 1: ./fib_nature
   Range (min … max):    2.309 s …  2.375 s    10 runs
 ```
 
-## golang
+## go1.25.5
 
 ```
 hyperfine ./fib_go
@@ -17,7 +25,7 @@ Benchmark 1: ./fib_go
   Range (min … max):    2.324 s …  2.367 s    10 runs
 ```
 
-## rust
+## rust 1.92.0
 
 ```
 hyperfine ./fib_rust
@@ -27,7 +35,7 @@ Benchmark 1: ./fib_rust
  
 ```
 
-## node.js
+## node.js v25.2.0
 
 ```
 hyperfine "node fib.js"

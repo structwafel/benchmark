@@ -1,4 +1,12 @@
-## nature
+## Macmini m4 virtual machine
+
+CPU cores: 10
+
+Memory: 7.80745 GB
+
+Linux ubuntu 6.17.8-orbstack-00308-g8f9c941121b1 #1 SMP PREEMPT Thu Nov 20 09:34:02 UTC 2025 aarch64 aarch64 aarch64 GNU/Linux
+
+## nature v0.7.1
 
 ```
 hyperfine ./ffi_n
@@ -8,7 +16,7 @@ Benchmark 1: ./ffi_n
 ```
 
 
-## golang
+## go1.25.5
 
 ```
 hyperfine ./ffi_go

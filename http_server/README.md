@@ -1,4 +1,14 @@
-## nature
+## Macmini m4 virtual machine
+
+CPU cores: 10
+
+Memory: 7.80745 GB
+
+Linux ubuntu 6.17.8-orbstack-00308-g8f9c941121b1 #1 SMP PREEMPT Thu Nov 20 09:34:02 UTC 2025 aarch64 aarch64 aarch64 GNU/Linux
+
+
+## nature v0.7.1
+
 ab -n 100000 -c 1000 http://127.0.0.1:8888/
 This is ApacheBench, Version 2.3 <$Revision: 1913912 $>
 Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
@@ -54,7 +64,7 @@ Percentage of the requests served within a certain time (ms)
   99%     15
  100%     20 (longest request)
 
-## golang
+## go1.25.5
 
 ```
 ab -n 100000 -c 1000 http://127.0.0.1:8888/
@@ -113,7 +123,7 @@ Percentage of the requests served within a certain time (ms)
  100%     30 (longest request)
  ```
 
-## node.js
+## node.js v25.2.0
 
 ```
 ab -n 100000 -c 1000 http://127.0.0.1:8888/
