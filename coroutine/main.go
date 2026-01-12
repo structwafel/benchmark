@@ -26,5 +26,4 @@ func main() {
 		time.Sleep(10 * time.Millisecond)
 	}
 	println(time.Now().UnixMilli() - 10 - start) // calc time
-	time.Sleep(3000 * time.Millisecond)          // ms
 }

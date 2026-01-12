@@ -21,7 +21,7 @@ HTTP server performance using ApacheBench (`ab -n 100000 -c 1000`).
 
 | Language | Version | QPS (req/sec) | Mean Response Time |
 |----------|---------|---------------|---------------------|
-| Nature | v0.7.1 | ~104,000 | 9.60 ms |
+| Nature | v0.7.2 | ~104,000 | 9.60 ms |
 | Go | 1.25.5 | ~90,000 | 11.02 ms |
 | Node.js | v25.2.0 | ~66,000 | 14.99 ms |
 
@@ -33,10 +33,10 @@ Calculate `fib(45)`, testing recursion performance and function call overhead.
 
 | Language | Version | Mean Time |
 |----------|---------|-----------|
-| Rust | 1.92.0 | ~1.712 s |
-| Nature | v0.7.1 | ~2.340 s |
-| Go | 1.25.5 | ~2.341 s |
-| Node.js | v25.2.0 | ~6.036 s |
+| Rust | 1.92.0 | ~1.758 s |
+| Nature | v0.7.2 | ~2.453 s |
+| Go | 1.25.5 | ~2.421 s |
+| Node.js | v25.2.0 | ~6.198 s |
 
 ---
 
@@ -46,10 +46,10 @@ Calculate π using Leibniz series, testing floating-point arithmetic performance
 
 | Language | Version | Mean Time |
 |----------|---------|-----------|
-| Rust | 1.92.0 | ~547.6 ms |
-| Nature | v0.7.1 | ~762.4 ms |
-| Node.js | v25.2.0 | ~837.8 ms |
-| Go | 1.25.5 | ~991.2 ms |
+| Nature | v0.7.2 | ~512.9 ms |
+| Go | 1.25.5 | ~512.3 ms |
+| Rust | 1.92.0 | ~552.6 ms |
+| Node.js | v25.2.0 | ~850.8 ms |
 
 ---
 
@@ -59,7 +59,7 @@ Call C library function `sqrt()` 100 million times, testing FFI call overhead.
 
 | Language | Version | Mean Time |
 |----------|---------|-----------|
-| Nature | v0.7.1 | ~73.9 ms |
+| Nature | v0.7.2 | ~73.9 ms |
 | Go | 1.25.5 | ~2178 ms |
 
 ---
@@ -70,7 +70,7 @@ Create 1 million coroutines for concurrent execution, testing coroutine creation
 
 | Language | Version | Creation Time | Completion Time | Peak Memory |
 |----------|---------|---------------|-----------------|-------------|
-| Nature | v0.7.1 | ~559 ms | ~589 ms | ~969 MB |
+| Nature | v0.7.2 | ~559 ms | ~589 ms | ~969 MB |
 | Go | 1.25.5 | ~1035 ms | ~1047 ms | ~2580 MB |
 
 ---

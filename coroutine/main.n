@@ -23,5 +23,4 @@ fn main() {
         co.sleep(10)  
     }  
     println(time.now().ms_timestamp() - 10 - start) // calc time
-    co.sleep(3000) // ms
 } 
