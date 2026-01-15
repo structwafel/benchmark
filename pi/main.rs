@@ -11,11 +11,12 @@ fn main() {
 
     let rounds = contents.trim().parse::<u32>().unwrap() + 2;
 
+    let mut x: f64 = 1.0;
     let mut pi: f64 = 1.0;
-    (2..rounds).for_each(|i| {
-        let x = -1.0f64 + (2.0 * (i & 0x1) as f64);
+    for i in 2..=rounds {
+        x = -x;
         pi += x / (2 * i - 1) as f64;
-    });
+    }
 
     println!("{:.16}", pi * 4.0);
 }
